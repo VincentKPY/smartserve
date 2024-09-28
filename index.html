@@ -26,15 +26,19 @@
         .options {
             margin-left: 20px;
         }
-        .answer {
+        .answer, .explanation, .module, .cantonese-answer, .cantonese-explanation {
             display: none;
             margin-top: 10px;
+        }
+        .answer {
             font-weight: bold;
             color: #27ae60;
         }
-        .module {
-            display: none;
+        .explanation {
             font-style: italic;
+            color: #2980b9;
+        }
+        .module {
             color: #7f8c8d;
         }
         button {
@@ -49,6 +53,10 @@
         button:hover {
             background-color: #2980b9;
         }
+        .cantonese {
+            font-style: italic;
+            color: #8e44ad;
+        }
     </style>
 </head>
 <body>
@@ -56,6 +64,7 @@
 
     <div class="question">
         <p>1. What is the legal Blood Alcohol Concentration (BAC) limit for driving in Ontario?</p>
+        <p class="cantonese">1. 安大略省駕駛嘅法定血液酒精濃度限制係幾多？</p>
         <div class="options">
             <p>a) 0.05%</p>
             <p>b) 0.08%</p>
@@ -64,373 +73,498 @@
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: b) 0.08%</p>
+        <p class="cantonese-answer cantonese">正確答案：b) 0.08%</p>
+        <p class="explanation">Explanation: The legal Blood Alcohol Concentration (BAC) limit for driving in Ontario is 0.08%.</p>
+        <p class="cantonese-explanation cantonese">解釋：安大略省駕駛嘅法定血液酒精濃度限制係0.08%。</p>
         <p class="module">Module: 2.1</p>
     </div>
 
     <div class="question">
         <p>2. Which of the following is NOT a physical sign of intoxication?</p>
+        <p class="cantonese">2. 以下邊項唔係醉酒嘅身體表現？</p>
         <div class="options">
-            <p>a) Red/glassy eyes</p>
-            <p>b) Swaying or stumbling</p>
-            <p>c) Speaking quietly</p>
-            <p>d) Excessive sweating</p>
+            <p>a) Red/glassy eyes 紅/呆滯嘅眼睛</p>
+            <p>b) Swaying or stumbling 搖晃或踉蹌</p>
+            <p>c) Speaking quietly 輕聲說話</p>
+            <p>d) Excessive sweating 過度出汗</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: c) Speaking quietly</p>
+        <p class="cantonese-answer cantonese">正確答案：c) 輕聲說話</p>
+        <p class="explanation">Explanation: Speaking quietly is not a physical sign of intoxication. In fact, intoxicated individuals often speak louder than necessary.</p>
+        <p class="cantonese-explanation cantonese">解釋：輕聲說話唔係醉酒嘅身體表現。事實上，醉酒嘅人通常會講嘢大聲過頭。</p>
         <p class="module">Module: 2.2</p>
     </div>
 
     <div class="question">
         <p>3. Alcohol is a stimulant that speeds up the central nervous system.</p>
+        <p class="cantonese">3. 酒精係一種刺激劑，會加速中樞神經系統。</p>
         <div class="options">
-            <p>a) True</p>
-            <p>b) False</p>
+            <p>a) True 正確</p>
+            <p>b) False 錯誤</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: False</p>
+        <p class="cantonese-answer cantonese">正確答案：錯誤</p>
+        <p class="explanation">Explanation: Alcohol is a depressant that slows down the central nervous system, not a stimulant.</p>
+        <p class="cantonese-explanation cantonese">解釋：酒精係一種抑制劑，會減慢中樞神經系統，而唔係刺激劑。</p>
         <p class="module">Module: 2.1</p>
     </div>
 
     <div class="question">
         <p>4. What is the minimum age to handle, sell, or deliver liquor in Ontario?</p>
+        <p class="cantonese">4. 喺安大略省處理、售賣或運送酒精飲品嘅最低年齡係幾多歲？</p>
         <div class="options">
-            <p>a) 16 years old</p>
-            <p>b) 18 years old</p>
-            <p>c) 19 years old</p>
-            <p>d) 21 years old</p>
+            <p>a) 16 years old 16歲</p>
+            <p>b) 18 years old 18歲</p>
+            <p>c) 19 years old 19歲</p>
+            <p>d) 21 years old 21歲</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: b) 18 years old</p>
+        <p class="cantonese-answer cantonese">正確答案：b) 18歲</p>
+        <p class="explanation">Explanation: The minimum age to handle, sell, or deliver liquor in Ontario is 18 years old.</p>
+        <p class="cantonese-explanation cantonese">解釋：喺安大略省處理、售賣或運送酒精飲品嘅最低年齡係18歲。</p>
         <p class="module">Module: 3.2</p>
     </div>
 
     <div class="question">
         <p>5. When can licensed grocery and convenience stores sell liquor?</p>
+        <p class="cantonese">5. 持牌雜貨店同便利店幾時可以賣酒？</p>
         <div class="options">
-            <p>a) 24 hours a day</p>
-            <p>b) 7:00 a.m. to 11:00 p.m.</p>
-            <p>c) 9:00 a.m. to 11:00 p.m.</p>
-            <p>d) 11:00 a.m. to 2:00 a.m.</p>
+            <p>a) 24 hours a day 全日24小時</p>
+            <p>b) 7:00 a.m. to 11:00 p.m. 早上7點至晚上11點</p>
+            <p>c) 9:00 a.m. to 11:00 p.m. 早上9點至晚上11點</p>
+            <p>d) 11:00 a.m. to 2:00 a.m. 上午11點至凌晨2點</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: b) 7:00 a.m. to 11:00 p.m.</p>
+        <p class="cantonese-answer cantonese">正確答案：b) 早上7點至晚上11點</p>
+        <p class="explanation">Explanation: Licensed grocery and convenience stores can sell liquor from 7:00 a.m. to 11:00 p.m.</p>
+        <p class="cantonese-explanation cantonese">解釋：持牌雜貨店同便利店可以喺早上7點至晚上11點賣酒。</p>
         <p class="module">Module: 3.2</p>
     </div>
 
     <div class="question">
-        <p>6. Sandy's Law requires displaying a sign warning about drinking during pregnancy.</p>
+        <p>6. Sandy's Law requires:</p>
+        <p class="cantonese">6. Sandy法律要求：</p>
         <div class="options">
-            <p>a) True</p>
-            <p>b) False</p>
+            <p>a) Checking ID for all customers 檢查所有顧客嘅身份證</p>
+            <p>b) Displaying a sign warning about drinking during pregnancy 展示一個關於懷孕期間飲酒嘅警告標誌</p>
+            <p>c) Limiting alcohol sales per customer 限制每位顧客嘅酒精購買量</p>
+            <p>d) Providing free water to all patrons 為所有顧客提供免費飲用水</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
-        <p class="answer">Correct Answer: True</p>
+        <p class="answer">Correct Answer: b) Displaying a sign warning about drinking during pregnancy</p>
+        <p class="cantonese-answer cantonese">正確答案：b) 展示一個關於懷孕期間飲酒嘅警告標誌</p>
+        <p class="explanation">Explanation: Sandy's Law requires displaying a sign warning about drinking during pregnancy to prevent Fetal Alcohol Spectrum Disorder (FASD).</p>
+        <p class="cantonese-explanation cantonese">解釋：Sandy法律要求展示一個關於懷孕期間飲酒嘅警告標誌，以預防胎兒酒精譜系障礙（FASD）。</p>
         <p class="module">Module: 3.1</p>
     </div>
 
     <div class="question">
         <p>7. What is the minimum percentage of wine display that must be VQA wine in a wine boutique?</p>
+        <p class="cantonese">7. 喺葡萄酒精品店，VQA葡萄酒最少要佔幾多百分比嘅展示空間？</p>
         <div class="options">
-            <p>a) 10%</p>
-            <p>b) 20%</p>
-            <p>c) 40%</p>
-            <p>d) 50%</p>
+            <p>a) 10% 百分之十</p>
+            <p>b) 20% 百分之二十</p>
+            <p>c) 40% 百分之四十</p>
+            <p>d) 50% 百分之五十</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: d) 50%</p>
+        <p class="cantonese-answer cantonese">正確答案：d) 百分之五十</p>
+        <p class="explanation">Explanation: In a wine boutique, at least 50% of the wine display must be VQA wine.</p>
+        <p class="cantonese-explanation cantonese">解釋：喺葡萄酒精品店，最少一半（50%）嘅展示空間要擺放VQA葡萄酒。</p>
         <p class="module">Module: 3.3</p>
     </div>
 
     <div class="question">
         <p>8. Licensed convenience stores are required to accept returns of empty containers and provide refunds to consumers.</p>
+        <p class="cantonese">8. 持牌便利店必須接受顧客退回空容器並提供退款。</p>
         <div class="options">
-            <p>a) True</p>
-            <p>b) False</p>
+            <p>a) True 正確</p>
+            <p>b) False 錯誤</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: False</p>
+        <p class="cantonese-answer cantonese">正確答案：錯誤</p>
+        <p class="explanation">Explanation: Licensed convenience stores are not required to accept returns of empty containers or provide refunds, but they must clearly post the nearest location(s) where containers can be returned.</p>
+        <p class="cantonese-explanation cantonese">解釋：持牌便利店唔需要接受空容器退回或提供退款，但佢哋必須清楚張貼最近嘅可以退回容器嘅地點。</p>
         <p class="module">Module: 3.1</p>
     </div>
 
     <div class="question">
         <p>9. What is NOT an acceptable form of ID for purchasing alcohol in Ontario?</p>
+        <p class="cantonese">9. 以下邊種身份證明唔可以用嚟喺安大略省購買酒精飲品？</p>
         <div class="options">
-            <p>a) Canadian Passport</p>
-            <p>b) Ontario Driver's License</p>
-            <p>c) Ontario Health Card</p>
-            <p>d) Canadian Armed Forces Identification Card</p>
+            <p>a) Canadian Passport 加拿大護照</p>
+            <p>b) Ontario Driver's License 安大略省駕駛執照</p>
+            <p>c) Ontario Health Card 安大略省健康卡</p>
+            <p>d) Canadian Armed Forces Identification Card 加拿大軍人身份證</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: c) Ontario Health Card</p>
+        <p class="cantonese-answer cantonese">正確答案：c) 安大略省健康卡</p>
+        <p class="explanation">Explanation: The Ontario Health Card is not an acceptable form of ID for purchasing alcohol, as it's illegal to require its production or record information from it.</p>
+        <p class="cantonese-explanation cantonese">解釋：安大略省健康卡唔可以用嚟購買酒精飲品，因為要求出示或記錄健康卡資料係違法嘅。</p>
         <p class="module">Module: 5.3</p>
     </div>
 
     <div class="question">
         <p>10. Liquor delivery services can purchase liquor prior to receiving an order.</p>
+        <p class="cantonese">10. 酒精飲品送貨服務可以喺收到訂單之前購買酒精飲品。</p>
         <div class="options">
-            <p>a) True</p>
-            <p>b) False</p>
+            <p>a) True 正確</p>
+            <p>b) False 錯誤</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: False</p>
+        <p class="cantonese-answer cantonese">正確答案：錯誤</p>
+        <p class="explanation">Explanation: Licensed Liquor Delivery Services may not purchase or obtain liquor prior to receiving an order.</p>
+        <p class="cantonese-explanation cantonese">解釋：持牌酒精飲品送貨服務唔可以喺收到訂單之前購買或獲取酒精飲品。</p>
         <p class="module">Module: 3.4</p>
     </div>
 
     <div class="question">
         <p>11. What is the acronym for the approach to retail sales of alcohol?</p>
+        <p class="cantonese">11. 零售酒精飲品嘅方法簡稱係乜嘢？</p>
         <div class="options">
-            <p>a) SMART</p>
-            <p>b) SIMPLE</p>
-            <p>c) SAFETY</p>
-            <p>d) SECURE</p>
+            <p>a) SMART 聰明</p>
+            <p>b) SIMPLE 簡單</p>
+            <p>c) SAFETY 安全</p>
+            <p>d) SECURE 保安</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: b) SIMPLE</p>
+        <p class="cantonese-answer cantonese">正確答案：b) SIMPLE（簡單）</p>
+        <p class="explanation">Explanation: SIMPLE is the acronym used for the approach to retail sales of alcohol.</p>
+        <p class="cantonese-explanation cantonese">解釋：SIMPLE係用嚟形容零售酒精飲品方法嘅簡稱。</p>
         <p class="module">Module: 5.2</p>
     </div>
 
     <div class="question">
         <p>12. What is the maximum alcohol content allowed for beer and cider in licensed grocery and convenience stores?</p>
+        <p class="cantonese">12. 喺持牌雜貨店同便利店，啤酒同蘋果酒嘅最高酒精含量係幾多？</p>
         <div class="options">
-            <p>a) 5.5%</p>
-            <p>b) 7.1%</p>
-            <p>c) 10%</p>
-            <p>d) 18%</p>
+            <p>a) 5.5% 百分之五點五</p>
+            <p>b) 7.1% 百分之七點一</p>
+            <p>c) 10% 百分之十</p>
+            <p>d) 18% 百分之十八</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: b) 7.1%</p>
+        <p class="cantonese-answer cantonese">正確答案：b) 百分之七點一</p>
+        <p class="explanation">Explanation: The maximum alcohol content allowed for beer and cider in licensed grocery and convenience stores is 7.1% by volume.</p>
+        <p class="cantonese-explanation cantonese">解釋：喺持牌雜貨店同便利店，啤酒同蘋果酒嘅最高酒精含量係7.1%（體積百分比）。</p>
         <p class="module">Module: 3.2</p>
     </div>
 
     <div class="question">
         <p>13. Civil liability means that the police could charge you with a crime.</p>
+        <p class="cantonese">13. 民事責任意味住警察可以控告你犯罪。</p>
         <div class="options">
-            <p>a) True</p>
-            <p>b) False</p>
+            <p>a) True 正確</p>
+            <p>b) False 錯誤</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: False</p>
+        <p class="cantonese-answer cantonese">正確答案：錯誤</p>
+        <p class="explanation">Explanation: Civil liability means that an individual can sue you for damages, not that the police could charge you with a crime.</p>
+        <p class="cantonese-explanation cantonese">解釋：民事責任意味住個人可以就損失向你提出訴訟，而唔係警察可以控告你犯罪。</p>
         <p class="module">Module: 5.1</p>
     </div>
 
     <div class="question">
         <p>14. What percentage of beer on display must be produced by small breweries?</p>
+        <p class="cantonese">14. 展示嘅啤酒中，有幾多百分比必須由小型啤酒廠生產？</p>
         <div class="options">
-            <p>a) 10%</p>
-            <p>b) 20%</p>
-            <p>c) 30%</p>
-            <p>d) 40%</p>
+            <p>a) 10% 百分之十</p>
+            <p>b) 20% 百分之二十</p>
+            <p>c) 30% 百分之三十</p>
+            <p>d) 40% 百分之四十</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: b) 20%</p>
+        <p class="cantonese-answer cantonese">正確答案：b) 百分之二十</p>
+        <p class="explanation">Explanation: At least 20% of the beer on display must be produced by small breweries.</p>
+        <p class="cantonese-explanation cantonese">解釋：展示嘅啤酒中，最少20%必須由小型啤酒廠生產。</p>
         <p class="module">Module: 3.3</p>
     </div>
 
     <div class="question">
         <p>15. During what hours can liquor be delivered in Ontario?</p>
+        <p class="cantonese">15. 喺安大略省，幾點鐘可以送酒？</p>
         <div class="options">
-            <p>a) 24 hours a day</p>
-            <p>b) 7:00 a.m. to 11:00 p.m.</p>
-            <p>c) 9:00 a.m. to 11:00 p.m.</p>
-            <p>d) 11:00 a.m. to 2:00 a.m.</p>
+            <p>a) 24 hours a day 全日24小時</p>
+            <p>b) 7:00 a.m. to 11:00 p.m. 早上7點至晚上11點</p>
+            <p>c) 9:00 a.m. to 11:00 p.m. 早上9點至晚上11點</p>
+            <p>d) 11:00 a.m. to 2:00 a.m. 上午11點至凌晨2點</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: c) 9:00 a.m. to 11:00 p.m.</p>
+        <p class="cantonese-answer cantonese">正確答案：c) 早上9點至晚上11點</p>
+        <p class="explanation">Explanation: Liquor can be delivered between 9:00 a.m. and 11:00 p.m. on any day.</p>
+        <p class="cantonese-explanation cantonese">解釋：每日早上9點至晚上11點之間可以送酒。</p>
         <p class="module">Module: 3.4</p>
     </div>
 
     <div class="question">
         <p>16. What is the minimum age for a person to receive a liquor delivery?</p>
+        <p class="cantonese">16. 收酒嘅人最少要幾多歲？</p>
         <div class="options">
-            <p>a) 18 years old</p>
-            <p>b) 19 years old</p>
-            <p>c) 21 years old</p>
-            <p>d) 25 years old</p>
+            <p>a) 18 years old 18歲</p>
+            <p>b) 19 years old 19歲</p>
+            <p>c) 21 years old 21歲</p>
+            <p>d) 25 years old 25歲</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: b) 19 years old</p>
+        <p class="cantonese-answer cantonese">正確答案：b) 19歲</p>
+        <p class="explanation">Explanation: The minimum age for a person to receive a liquor delivery is 19 years old.</p>
+        <p class="cantonese-explanation cantonese">解釋：收酒嘅人最少要19歲。</p>
         <p class="module">Module: 3.4</p>
     </div>
 
     <div class="question">
         <p>17. Wine boutiques can sell ready-to-drink beverages.</p>
+        <p class="cantonese">17. 葡萄酒精品店可以賣即飲飲品。</p>
         <div class="options">
-            <p>a) True</p>
-            <p>b) False</p>
+            <p>a) True 正確</p>
+            <p>b) False 錯誤</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: False</p>
+        <p class="cantonese-answer cantonese">正確答案：錯誤</p>
+        <p class="explanation">Explanation: Wine boutiques cannot sell ready-to-drink beverages.</p>
+        <p class="cantonese-explanation cantonese">解釋：葡萄酒精品店唔可以賣即飲飲品。</p>
         <p class="module">Module: 3.3</p>
     </div>
 
     <div class="question">
         <p>18. What is the maximum volume of a liquor container that can be sold in a licensed grocery or convenience store?</p>
+        <p class="cantonese">18. 喺持牌雜貨店或便利店可以賣嘅酒精飲品容器最大容量係幾多？</p>
         <div class="options">
-            <p>a) 1 liter</p>
-            <p>b) 3 liters</p>
-            <p>c) 5 liters</p>
-            <p>d) 10 liters</p>
+            <p>a) 1 liter 1公升</p>
+            <p>b) 3 liters 3公升</p>
+            <p>c) 5 liters 5公升</p>
+            <p>d) 10 liters 10公升</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: c) 5 liters</p>
+        <p class="cantonese-answer cantonese">正確答案：c) 5公升</p>
+        <p class="explanation">Explanation: The maximum volume of a liquor container that can be sold in a licensed grocery or convenience store is 5 liters.</p>
+        <p class="cantonese-explanation cantonese">解釋：喺持牌雜貨店或便利店可以賣嘅酒精飲品容器最大容量係5公升。</p>
         <p class="module">Module: 3.2</p>
     </div>
 
     <div class="question">
         <p>19. Licensed grocery and convenience stores can offer loyalty points for liquor purchases.</p>
+        <p class="cantonese">19. 持牌雜貨店同便利店可以俾積分俾購買酒精飲品嘅顧客。</p>
         <div class="options">
-            <p>a) True</p>
-            <p>b) False</p>
+            <p>a) True 正確</p>
+            <p>b) False 錯誤</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: False (as of September 5, 2024, this will change)</p>
+        <p class="cantonese-answer cantonese">正確答案：錯誤（由2024年9月5日起，呢個規定會改變）</p>
+        <p class="explanation">Explanation: Currently, licensed grocery and convenience stores cannot offer loyalty points for liquor purchases, but this restriction will be revoked as of September 5, 2024.</p>
+        <p class="cantonese-explanation cantonese">解釋：目前，持牌雜貨店同便利店唔可以俾積分俾購買酒精飲品嘅顧客，但呢個限制會喺2024年9月5日解除。</p>
         <p class="module">Module: 3.3</p>
     </div>
 
     <div class="question">
         <p>20. What percentage of ready-to-drink beverages on display must be produced by small manufacturers?</p>
+        <p class="cantonese">20. 展示嘅即飲飲品中，有幾多百分比必須由小型製造商生產？</p>
         <div class="options">
-            <p>a) 10%</p>
-            <p>b) 20%</p>
-            <p>c) 30%</p>
-            <p>d) 40%</p>
+            <p>a) 10% 百分之十</p>
+            <p>b) 20% 百分之二十</p>
+            <p>c) 30% 百分之三十</p>
+            <p>d) 40% 百分之四十</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: b) 20%</p>
+        <p class="cantonese-answer cantonese">正確答案：b) 百分之二十</p>
+        <p class="explanation">Explanation: At least 20% of the ready-to-drink beverages on display must be produced by small manufacturers.</p>
+        <p class="cantonese-explanation cantonese">解釋：展示嘅即飲飲品中，最少20%必須由小型製造商生產。</p>
         <p class="module">Module: 3.3</p>
     </div>
 
     <div class="question">
         <p>21. An expired driver's license is an acceptable form of ID for purchasing alcohol.</p>
+        <p class="cantonese">21. 過期嘅駕駛執照係可以接受嘅購買酒精飲品身份證明。</p>
         <div class="options">
-            <p>a) True</p>
-            <p>b) False</p>
+            <p>a) True 正確</p>
+            <p>b) False 錯誤</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: False</p>
+        <p class="cantonese-answer cantonese">正確答案：錯誤</p>
+        <p class="explanation">Explanation: An expired driver's license is not an acceptable form of ID for purchasing alcohol.</p>
+        <p class="cantonese-explanation cantonese">解釋：過期嘅駕駛執照唔係可以接受嘅購買酒精飲品身份證明。</p>
         <p class="module">Module: 5.3</p>
     </div>
 
     <div class="question">
         <p>22. What does the "S" in SIMPLE stand for?</p>
+        <p class="cantonese">22. SIMPLE 中嘅 "S" 代表乜嘢？</p>
         <div class="options">
-            <p>a) Service</p>
-            <p>b) Safety</p>
-            <p>c) Signs</p>
-            <p>d) Security</p>
+            <p>a) Service 服務</p>
+            <p>b) Safety 安全</p>
+            <p>c) Signs 標誌</p>
+            <p>d) Security 保安</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: c) Signs</p>
+        <p class="cantonese-answer cantonese">正確答案：c) 標誌</p>
+        <p class="explanation">Explanation: In the SIMPLE approach, "S" stands for Signs of intoxication.</p>
+        <p class="cantonese-explanation cantonese">解釋：喺SIMPLE方法中，"S"代表醉酒嘅標誌（Signs of intoxication）。</p>
         <p class="module">Module: 5.2</p>
     </div>
 
     <div class="question">
         <p>23. Liquor can be delivered to patients in medical facilities.</p>
+        <p class="cantonese">23. 可以將酒精飲品送俾醫療機構嘅病人。</p>
         <div class="options">
-            <p>a) True</p>
-            <p>b) False</p>
+            <p>a) True 正確</p>
+            <p>b) False 錯誤</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: False</p>
+        <p class="cantonese-answer cantonese">正確答案：錯誤</p>
+        <p class="explanation">Explanation: Liquor cannot be delivered to patients in medical facilities.</p>
+        <p class="cantonese-explanation cantonese">解釋：唔可以將酒精飲品送俾醫療機構嘅病人。</p>
         <p class="module">Module: 3.4</p>
     </div>
 
     <div class="question">
         <p>24. What percentage of cider on display must be produced by small cideries?</p>
+        <p class="cantonese">24. 展示嘅蘋果酒中，有幾多百分比必須由小型蘋果酒廠生產？</p>
         <div class="options">
-            <p>a) 10%</p>
-            <p>b) 20%</p>
-            <p>c) 30%</p>
-            <p>d) 40%</p>
+            <p>a) 10% 百分之十</p>
+            <p>b) 20% 百分之二十</p>
+            <p>c) 30% 百分之三十</p>
+            <p>d) 40% 百分之四十</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: b) 20%</p>
+        <p class="cantonese-answer cantonese">正確答案：b) 百分之二十</p>
+        <p class="explanation">Explanation: At least 20% of the cider on display must be produced by small cideries.</p>
+        <p class="cantonese-explanation cantonese">解釋：展示嘅蘋果酒中，最少20%必須由小型蘋果酒廠生產。</p>
         <p class="module">Module: 3.3</p>
     </div>
 
     <div class="question">
         <p>25. Licensed grocery stores must accept returns of empty regulated containers and provide refunds to customers starting October 31, 2024.</p>
+        <p class="cantonese">25. 由2024年10月31日開始，持牌雜貨店必須接受顧客退回空嘅受管制容器並提供退款。</p>
         <div class="options">
-            <p>a) True</p>
-            <p>b) False</p>
+            <p>a) True 正確</p>
+            <p>b) False 錯誤</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: True</p>
+        <p class="cantonese-answer cantonese">正確答案：正確</p>
+        <p class="explanation">Explanation: Starting October 31, 2024, licensed grocery stores must accept returns of empty regulated containers and provide refunds to customers.</p>
+        <p class="cantonese-explanation cantonese">解釋：由2024年10月31日開始，持牌雜貨店必須接受顧客退回空嘅受管制容器並提供退款。</p>
         <p class="module">Module: 3.1</p>
     </div>
 
     <div class="question">
         <p>26. What is the minimum percentage of wine (excluding cider) on display that must be produced by small wineries?</p>
+        <p class="cantonese">26. 展示嘅葡萄酒（唔包括蘋果酒）中，最少有幾多百分比必須由小型酒莊生產？</p>
         <div class="options">
-            <p>a) 5%</p>
-            <p>b) 10%</p>
-            <p>c) 20%</p>
-            <p>d) 30%</p>
+            <p>a) 5% 百分之五</p>
+            <p>b) 10% 百分之十</p>
+            <p>c) 20% 百分之二十</p>
+            <p>d) 30% 百分之三十</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: b) 10%</p>
+        <p class="cantonese-answer cantonese">正確答案：b) 百分之十</p>
+        <p class="explanation">Explanation: At least 10% of the wine display (excluding cider) must be produced by small wineries.</p>
+        <p class="cantonese-explanation cantonese">解釋：展示嘅葡萄酒（唔包括蘋果酒）中，最少10%必須由小型酒莊生產。</p>
         <p class="module">Module: 3.3</p>
     </div>
 
     <div class="question">
         <p>27. Liquor delivery services are allowed to make exclusive agreements with manufacturers.</p>
+        <p class="cantonese">27. 酒精飲品送貨服務可以同製造商簽訂獨家協議。</p>
         <div class="options">
-            <p>a) True</p>
-            <p>b) False</p>
+            <p>a) True 正確</p>
+            <p>b) False 錯誤</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: False</p>
+        <p class="cantonese-answer cantonese">正確答案：錯誤</p>
+        <p class="explanation">Explanation: Liquor delivery services are not allowed to make exclusive agreements with manufacturers.</p>
+        <p class="cantonese-explanation cantonese">解釋：酒精飲品送貨服務唔可以同製造商簽訂獨家協議。</p>
         <p class="module">Module: 3.4</p>
     </div>
 
     <div class="question">
         <p>28. What is the minimum age to serve liquor samples in a licensed grocery store?</p>
+        <p class="cantonese">28. 喺持牌雜貨店提供酒精飲品樣本嘅最低年齡要求係幾多歲？</p>
         <div class="options">
-            <p>a) 16 years old</p>
-            <p>b) 18 years old</p>
-            <p>c) 19 years old</p>
-            <p>d) 21 years old</p>
+            <p>a) 16 years old 16歲</p>
+            <p>b) 18 years old 18歲</p>
+            <p>c) 19 years old 19歲</p>
+            <p>d) 21 years old 21歲</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: b) 18 years old</p>
+        <p class="cantonese-answer cantonese">正確答案：b) 18歲</p>
+        <p class="explanation">Explanation: The minimum age to serve liquor samples in a licensed grocery store is 18 years old.</p>
+        <p class="cantonese-explanation cantonese">解釋：喺持牌雜貨店提供酒精飲品樣本嘅最低年齡要求係18歲。</p>
         <p class="module">Module: 3.2</p>
     </div>
 
     <div class="question">
         <p>29. The Ontario Health Card can be required as a form of ID for purchasing alcohol.</p>
+        <p class="cantonese">29. 安大略省健康卡可以用作購買酒精飲品嘅身份證明。</p>
         <div class="options">
-            <p>a) True</p>
-            <p>b) False</p>
+            <p>a) True 正確</p>
+            <p>b) False 錯誤</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: False</p>
+        <p class="cantonese-answer cantonese">正確答案：錯誤</p>
+        <p class="explanation">Explanation: The Ontario Health Card cannot be required as a form of ID for purchasing alcohol.</p>
+        <p class="cantonese-explanation cantonese">解釋：安大略省健康卡唔可以用作購買酒精飲品嘅身份證明。</p>
         <p class="module">Module: 5.3</p>
     </div>
 
     <div class="question">
         <p>30. What percentage of wine display in a grocery store must be from small wineries?</p>
+        <p class="cantonese">30. 喺雜貨店展示嘅葡萄酒中，有幾多百分比必須來自小型酒莊？</p>
         <div class="options">
-            <p>a) 5%</p>
-            <p>b) 10%</p>
-            <p>c) 20%</p>
-            <p>d) 30%</p>
+            <p>a) 5% 百分之五</p>
+            <p>b) 10% 百分之十</p>
+            <p>c) 20% 百分之二十</p>
+            <p>d) 30% 百分之三十</p>
         </div>
         <button onclick="toggleAnswer(this)">Show Answer</button>
         <p class="answer">Correct Answer: b) 10%</p>
+        <p class="cantonese-answer cantonese">正確答案：b) 百分之十</p>
+        <p class="explanation">Explanation: At least 10% of the wine display in a grocery store must be from small wineries.</p>
+        <p class="cantonese-explanation cantonese">解釋：喺雜貨店展示嘅葡萄酒中，最少10%必須來自小型酒莊。</p>
         <p class="module">Module: 3.3</p>
     </div>
 
     <script>
         function toggleAnswer(button) {
             const answer = button.nextElementSibling;
-            const module = answer.nextElementSibling;
+            const cantoneseAnswer = answer.nextElementSibling;
+            const explanation = cantoneseAnswer.nextElementSibling;
+            const cantoneseExplanation = explanation.nextElementSibling;
+            const module = cantoneseExplanation.nextElementSibling;
+            
+            const elements = [answer, cantoneseAnswer, explanation, cantoneseExplanation, module];
+            
             if (answer.style.display === "none" || answer.style.display === "") {
-                answer.style.display = "block";
-                module.style.display = "block";
+                elements.forEach(el => el.style.display = "block");
                 button.textContent = "Hide Answer";
             } else {
-                answer.style.display = "none";
-                module.style.display = "none";
+                elements.forEach(el => el.style.display = "none");
                 button.textContent = "Show Answer";
             }
         }
