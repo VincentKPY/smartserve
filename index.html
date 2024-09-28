@@ -1,5 +1,441 @@
-<html>
-    <body>
-        <p>hello</p>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Serve Test Preparation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .question {
+            background-color: #f2f2f2;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #27ae60;
+        }
+        .module {
+            display: none;
+            font-style: italic;
+            color: #7f8c8d;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Smart Serve Test Preparation</h1>
+
+    <div class="question">
+        <p>1. What is the legal Blood Alcohol Concentration (BAC) limit for driving in Ontario?</p>
+        <div class="options">
+            <p>a) 0.05%</p>
+            <p>b) 0.08%</p>
+            <p>c) 0.10%</p>
+            <p>d) 0.12%</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: b) 0.08%</p>
+        <p class="module">Module: 2.1</p>
+    </div>
+
+    <div class="question">
+        <p>2. Which of the following is NOT a physical sign of intoxication?</p>
+        <div class="options">
+            <p>a) Red/glassy eyes</p>
+            <p>b) Swaying or stumbling</p>
+            <p>c) Speaking quietly</p>
+            <p>d) Excessive sweating</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: c) Speaking quietly</p>
+        <p class="module">Module: 2.2</p>
+    </div>
+
+    <div class="question">
+        <p>3. Alcohol is a stimulant that speeds up the central nervous system.</p>
+        <div class="options">
+            <p>a) True</p>
+            <p>b) False</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: False</p>
+        <p class="module">Module: 2.1</p>
+    </div>
+
+    <div class="question">
+        <p>4. What is the minimum age to handle, sell, or deliver liquor in Ontario?</p>
+        <div class="options">
+            <p>a) 16 years old</p>
+            <p>b) 18 years old</p>
+            <p>c) 19 years old</p>
+            <p>d) 21 years old</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: b) 18 years old</p>
+        <p class="module">Module: 3.2</p>
+    </div>
+
+    <div class="question">
+        <p>5. When can licensed grocery and convenience stores sell liquor?</p>
+        <div class="options">
+            <p>a) 24 hours a day</p>
+            <p>b) 7:00 a.m. to 11:00 p.m.</p>
+            <p>c) 9:00 a.m. to 11:00 p.m.</p>
+            <p>d) 11:00 a.m. to 2:00 a.m.</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: b) 7:00 a.m. to 11:00 p.m.</p>
+        <p class="module">Module: 3.2</p>
+    </div>
+
+    <div class="question">
+        <p>6. Sandy's Law requires displaying a sign warning about drinking during pregnancy.</p>
+        <div class="options">
+            <p>a) True</p>
+            <p>b) False</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: True</p>
+        <p class="module">Module: 3.1</p>
+    </div>
+
+    <div class="question">
+        <p>7. What is the minimum percentage of wine display that must be VQA wine in a wine boutique?</p>
+        <div class="options">
+            <p>a) 10%</p>
+            <p>b) 20%</p>
+            <p>c) 40%</p>
+            <p>d) 50%</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: d) 50%</p>
+        <p class="module">Module: 3.3</p>
+    </div>
+
+    <div class="question">
+        <p>8. Licensed convenience stores are required to accept returns of empty containers and provide refunds to consumers.</p>
+        <div class="options">
+            <p>a) True</p>
+            <p>b) False</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: False</p>
+        <p class="module">Module: 3.1</p>
+    </div>
+
+    <div class="question">
+        <p>9. What is NOT an acceptable form of ID for purchasing alcohol in Ontario?</p>
+        <div class="options">
+            <p>a) Canadian Passport</p>
+            <p>b) Ontario Driver's License</p>
+            <p>c) Ontario Health Card</p>
+            <p>d) Canadian Armed Forces Identification Card</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: c) Ontario Health Card</p>
+        <p class="module">Module: 5.3</p>
+    </div>
+
+    <div class="question">
+        <p>10. Liquor delivery services can purchase liquor prior to receiving an order.</p>
+        <div class="options">
+            <p>a) True</p>
+            <p>b) False</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: False</p>
+        <p class="module">Module: 3.4</p>
+    </div>
+
+    <div class="question">
+        <p>11. What is the acronym for the approach to retail sales of alcohol?</p>
+        <div class="options">
+            <p>a) SMART</p>
+            <p>b) SIMPLE</p>
+            <p>c) SAFETY</p>
+            <p>d) SECURE</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: b) SIMPLE</p>
+        <p class="module">Module: 5.2</p>
+    </div>
+
+    <div class="question">
+        <p>12. What is the maximum alcohol content allowed for beer and cider in licensed grocery and convenience stores?</p>
+        <div class="options">
+            <p>a) 5.5%</p>
+            <p>b) 7.1%</p>
+            <p>c) 10%</p>
+            <p>d) 18%</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: b) 7.1%</p>
+        <p class="module">Module: 3.2</p>
+    </div>
+
+    <div class="question">
+        <p>13. Civil liability means that the police could charge you with a crime.</p>
+        <div class="options">
+            <p>a) True</p>
+            <p>b) False</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: False</p>
+        <p class="module">Module: 5.1</p>
+    </div>
+
+    <div class="question">
+        <p>14. What percentage of beer on display must be produced by small breweries?</p>
+        <div class="options">
+            <p>a) 10%</p>
+            <p>b) 20%</p>
+            <p>c) 30%</p>
+            <p>d) 40%</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: b) 20%</p>
+        <p class="module">Module: 3.3</p>
+    </div>
+
+    <div class="question">
+        <p>15. During what hours can liquor be delivered in Ontario?</p>
+        <div class="options">
+            <p>a) 24 hours a day</p>
+            <p>b) 7:00 a.m. to 11:00 p.m.</p>
+            <p>c) 9:00 a.m. to 11:00 p.m.</p>
+            <p>d) 11:00 a.m. to 2:00 a.m.</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: c) 9:00 a.m. to 11:00 p.m.</p>
+        <p class="module">Module: 3.4</p>
+    </div>
+
+    <div class="question">
+        <p>16. What is the minimum age for a person to receive a liquor delivery?</p>
+        <div class="options">
+            <p>a) 18 years old</p>
+            <p>b) 19 years old</p>
+            <p>c) 21 years old</p>
+            <p>d) 25 years old</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: b) 19 years old</p>
+        <p class="module">Module: 3.4</p>
+    </div>
+
+    <div class="question">
+        <p>17. Wine boutiques can sell ready-to-drink beverages.</p>
+        <div class="options">
+            <p>a) True</p>
+            <p>b) False</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: False</p>
+        <p class="module">Module: 3.3</p>
+    </div>
+
+    <div class="question">
+        <p>18. What is the maximum volume of a liquor container that can be sold in a licensed grocery or convenience store?</p>
+        <div class="options">
+            <p>a) 1 liter</p>
+            <p>b) 3 liters</p>
+            <p>c) 5 liters</p>
+            <p>d) 10 liters</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: c) 5 liters</p>
+        <p class="module">Module: 3.2</p>
+    </div>
+
+    <div class="question">
+        <p>19. Licensed grocery and convenience stores can offer loyalty points for liquor purchases.</p>
+        <div class="options">
+            <p>a) True</p>
+            <p>b) False</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: False (as of September 5, 2024, this will change)</p>
+        <p class="module">Module: 3.3</p>
+    </div>
+
+    <div class="question">
+        <p>20. What percentage of ready-to-drink beverages on display must be produced by small manufacturers?</p>
+        <div class="options">
+            <p>a) 10%</p>
+            <p>b) 20%</p>
+            <p>c) 30%</p>
+            <p>d) 40%</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: b) 20%</p>
+        <p class="module">Module: 3.3</p>
+    </div>
+
+    <div class="question">
+        <p>21. An expired driver's license is an acceptable form of ID for purchasing alcohol.</p>
+        <div class="options">
+            <p>a) True</p>
+            <p>b) False</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: False</p>
+        <p class="module">Module: 5.3</p>
+    </div>
+
+    <div class="question">
+        <p>22. What does the "S" in SIMPLE stand for?</p>
+        <div class="options">
+            <p>a) Service</p>
+            <p>b) Safety</p>
+            <p>c) Signs</p>
+            <p>d) Security</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: c) Signs</p>
+        <p class="module">Module: 5.2</p>
+    </div>
+
+    <div class="question">
+        <p>23. Liquor can be delivered to patients in medical facilities.</p>
+        <div class="options">
+            <p>a) True</p>
+            <p>b) False</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: False</p>
+        <p class="module">Module: 3.4</p>
+    </div>
+I apologize for the truncation. Here's the remaining portion of the HTML code, continuing from question 24:
+
+```html
+    <div class="question">
+        <p>24. What percentage of cider on display must be produced by small cideries?</p>
+        <div class="options">
+            <p>a) 10%</p>
+            <p>b) 20%</p>
+            <p>c) 30%</p>
+            <p>d) 40%</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: b) 20%</p>
+        <p class="module">Module: 3.3</p>
+    </div>
+
+    <div class="question">
+        <p>25. Licensed grocery stores must accept returns of empty regulated containers and provide refunds to customers starting October 31, 2024.</p>
+        <div class="options">
+            <p>a) True</p>
+            <p>b) False</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: True</p>
+        <p class="module">Module: 3.1</p>
+    </div>
+
+    <div class="question">
+        <p>26. What is the minimum percentage of wine (excluding cider) on display that must be produced by small wineries?</p>
+        <div class="options">
+            <p>a) 5%</p>
+            <p>b) 10%</p>
+            <p>c) 20%</p>
+            <p>d) 30%</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: b) 10%</p>
+        <p class="module">Module: 3.3</p>
+    </div>
+
+    <div class="question">
+        <p>27. Liquor delivery services are allowed to make exclusive agreements with manufacturers.</p>
+        <div class="options">
+            <p>a) True</p>
+            <p>b) False</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: False</p>
+        <p class="module">Module: 3.4</p>
+    </div>
+
+    <div class="question">
+        <p>28. What is the minimum age to serve liquor samples in a licensed grocery store?</p>
+        <div class="options">
+            <p>a) 16 years old</p>
+            <p>b) 18 years old</p>
+            <p>c) 19 years old</p>
+            <p>d) 21 years old</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: b) 18 years old</p>
+        <p class="module">Module: 3.2</p>
+    </div>
+
+    <div class="question">
+        <p>29. The Ontario Health Card can be required as a form of ID for purchasing alcohol.</p>
+        <div class="options">
+            <p>a) True</p>
+            <p>b) False</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: False</p>
+        <p class="module">Module: 5.3</p>
+    </div>
+
+    <div class="question">
+        <p>30. What percentage of wine display in a grocery store must be from small wineries?</p>
+        <div class="options">
+            <p>a) 5%</p>
+            <p>b) 10%</p>
+            <p>c) 20%</p>
+            <p>d) 30%</p>
+        </div>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <p class="answer">Correct Answer: b) 10%</p>
+        <p class="module">Module: 3.3</p>
+    </div>
+
+    <script>
+        function toggleAnswer(button) {
+            const answer = button.nextElementSibling;
+            const module = answer.nextElementSibling;
+            if (answer.style.display === "none" || answer.style.display === "") {
+                answer.style.display = "block";
+                module.style.display = "block";
+                button.textContent = "Hide Answer";
+            } else {
+                answer.style.display = "none";
+                module.style.display = "none";
+                button.textContent = "Show Answer";
+            }
+        }
+    </script>
+</body>
 </html>
